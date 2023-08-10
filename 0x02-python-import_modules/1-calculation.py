@@ -8,6 +8,6 @@ if __name__ == "__main__":
     result3 = a * b
     result4 = a / b
     print("{} + {} = {}".format(a, b, result1))
-    print("{} - {} = {}".format(a, b, result1))
-    print("{} * {} = {}".format(a, b, result1))
-    print("{} / {} = {}".format(a, b, result1))
+    print("{} - {} = {}".format(a, b, result2))
+    print("{} * {} = {}".format(a, b, result3))
+    print("{} / {} = {}".format(a, b, result4))
