@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-    num_args = len(sys.argv)
     arg_index = len(sys.argv) - 1
     if arg_index == 1:
         print("1 argument:")
