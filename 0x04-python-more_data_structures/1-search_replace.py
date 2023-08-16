@@ -1,7 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 def search_replace(my_list, search, replace):
-    if not my_list:
-        my_list = []
-    the_function = lambda item: replace if item == search else item
-    new_list = list(map(the_function, my_list))
-    return new_list
+    new_list = list(map(
+                    lambda item: replace if item == search else item, my_list))
+    return (new_list)
