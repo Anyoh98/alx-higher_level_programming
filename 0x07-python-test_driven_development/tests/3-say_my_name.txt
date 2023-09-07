@@ -1,0 +1,73 @@
+Example
+Calling the `print name` Function
+----------------------------------
+
+You need to import the `say_my_name`function from
+the `3-say_my_name` module for the doctstring to act on it.
+
+	>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+Call function with 2 strings for first and last name respectively
+
+    	>>> say_my_name("Anyoh", "Baby")
+	My name is Anyoh Baby
+
+Call the function with multple names in each argument
+
+	>>> say_my_name("Diego 3", "Armand kugogh")
+	My name is Diego 3 Armand kugogh
+
+Call function only with first name
+    
+	>>> say_my_name("Brennan")
+    	My name is Brennan 
+
+
+Invalid names
+~~~~~~~~~~~~~
+
+Call the function with only `first_name`as string
+
+	>>> say_my_name("Henry", 2)
+	Traceback (most recent call last):
+		...
+	TypeError: last_name must be a string
+
+	>>> say_my_name("King", {"kian": 0, "liam": 5})
+	Traceback (most recent call last):
+		...
+	TypeError: last_name must be a string
+
+Call the function with only `last_name`as string
+
+	>>> say_my_name(3, "Larry")
+	Traceback (most recent call last):
+		...
+	TypeError: first_name must be a string
+
+	>>> say_my_name(["gun", "ham"], "kian")
+	Traceback (most recent call last):
+		...
+	TypeError: first_name must be a string
+
+Call fucntion with both names being non-strings
+
+	>>> say_my_name(3, 4)
+	Traceback (most recent call last):
+		...
+	TypeError: first_name must be a string
+
+call function with None is inside
+
+	>>> say_my_name(None)
+	Traceback (most recent call last):
+		...
+	TypeError: first_name must be a string
+
+Call function with nothing inside 
+
+	>>> say_my_name()
+	Traceback (most recent call last):
+	    ...
+	TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+	
